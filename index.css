@@ -1,0 +1,206 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin-top: 0;
+    padding: 40px;
+    height: 200px;
+    flex-shrink: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("header.png");
+    background-repeat: no-repeat;
+    background-color: #363838;
+    background-size: cover;
+    position: relative;
+}
+
+header >h1{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 42.795px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 23.775px; /* 55.556% */
+    letter-spacing: -1.926px;
+}
+
+header >a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    text-decoration: none;
+}
+nav{
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top:260px;
+    left: 30%;
+    right: 30%;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    min-width:300px;
+    background: var(--gray-50, #F9FAFB);
+    border-radius: 6px 0px 0px 6px;
+}
+
+.search-input {
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+    flex: 1; /* Allow the input to expand and take up available space */  
+    color: var(--gray-500, #6B7280);
+    /* text-sm/leading-5/font-medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */ 
+}
+.search-button {
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid var(--gray-300, #D1D5DB);
+    background: var(--gray-50, #F9FAFB);
+    padding: 5px 20px;
+    cursor: pointer;
+    color: var(--gray-700, #374151);
+    /* text-sm/leading-5/font-medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+
+/* Style for the search icon */
+.search-icon {
+    margin-right: 5px; /* Add some space between the icon and input */
+}
+
+.movie-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 30px;
+    width: 600px;
+    height: 280px;
+    padding: 0 20px 0 10px;
+    border-bottom: 1px solid lightgrey;
+}
+.movie-container >img{
+    width: 30%;
+    height: 90%;
+    flex-shrink: 0;
+}
+.movie-info{
+    flex-wrap: wrap;
+    width:70%;
+    height: 80%;
+    margin-left: 20px;
+}
+
+.movie-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 111.111% */
+}
+
+.movie-rating{
+    color: #111827;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+.movie-runtime{
+    color: #111827;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+.movie-plot{
+    color: #6B7280;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.movie-list{
+    width: 600px;
+    height: 280px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.movie-list >img{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.movie-list >h2{
+    color: #DFDDDD;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    text-align: center;
+}
+
+.error-message{
+    width: 321px;
+    color: #DFDDDD;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    margin-left: auto;
+    margin-right: auto;
+}
+.add-btn , .remove-btn{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: #111827;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+.watch-list{
+    margin-top: 100px;
+    color: darkgrey;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.5px; /* 158.333% */
+}
+
+.watch-list .movie-info{
+    text-align: left;
+}
